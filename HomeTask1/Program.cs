@@ -59,4 +59,37 @@
 //}
 
 
+////--------------------------------------Task4------------------------------
+Console.WriteLine("Yawinizi daxil edin :");
+int age = int.Parse(Console.ReadLine());
+
+
+
+if (age < 0)
+{
+    Console.WriteLine("Bele Yaw yoxdur. Zehmete olmasa yawinizi duzgun daxil edin...");
+}
+else if (age <= 12 || age >= 60)
+{
+    Console.WriteLine("Bilet 5 manat");
+}
+else if (age >= 13 || age <= 59)
+{
+    Console.WriteLine("Telebe kartiniz varmi Yes or No");
+    string card = Console.ReadLine();
+
+    if (card == "Yes")
+    {
+        Console.WriteLine("7.5 manat");
+    }
+    else if (card == "No")
+    {
+        Console.WriteLine("10 manat");
+    }
+    else
+    {
+        Console.WriteLine("Melumati duzgin daxil edin...");
+    }
+
+}
 
